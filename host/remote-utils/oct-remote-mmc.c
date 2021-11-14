@@ -36,6 +36,7 @@
 #include <getopt.h>
 #include <netinet/in.h>
 #include <byteswap.h>
+#include <sys/types.h>
 
 #define CVMX_ADD_IO_SEG(a) (a)  /* There aren't any Mips IO segments when using PCI */
 
