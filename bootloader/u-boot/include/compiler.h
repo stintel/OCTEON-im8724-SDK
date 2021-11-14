@@ -24,6 +24,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
+#include <sys/types.h>
 
 #if !defined(__WIN32__) && !defined(__MINGW32__)
 # include <sys/mman.h>

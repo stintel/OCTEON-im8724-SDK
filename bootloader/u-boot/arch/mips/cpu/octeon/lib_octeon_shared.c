@@ -70,6 +70,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>
+#include <sys/types.h>
 #ifdef BDK
 #include "bdk_lib_octeon_shared.h"
 extern int isspace(int);
