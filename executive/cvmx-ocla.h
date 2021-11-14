@@ -161,6 +161,7 @@
 #ifndef __CVMX_OCLA_H__
 #define __CVMX_OCLA_H__
 
+#include <sys/types.h>
 
 #define MAX_70XX_OCLA_COMPLEXES	1
 #define MAX_73XX_OCLA_COMPLEXES	3
