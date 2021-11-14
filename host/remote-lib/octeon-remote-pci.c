@@ -186,7 +186,7 @@ static int pci_get_device(int device)
         unsigned long long unused;
         char rest_of_line[256];
 
-        int count = fscanf(in, "%2x%2x %8x %x %Lx %Lx %Lx %Lx %Lx %Lx %Lx %Lx %Lx %Lx",
+        int count = fscanf(in, "%2x%2x %8x %x %llx %llx %llx %llx %llx %llx %llx %llx %llx %llx",
                            &bus, &devfn, &pci_id, &irq,
                            &bar0, &unused, &bar1, &unused, &unused, &unused, &unused,
                            &siz0, &unused, &siz1);
