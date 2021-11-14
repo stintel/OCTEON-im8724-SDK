@@ -38,12 +38,12 @@ LINECOMMENT	"//".*\n
 #include "srcpos.h"
 #include "dtc-parser.tab.h"
 
-YYLTYPE yylloc;
+YYLTYPE yyllocfoo;
 
 /* CAUTION: this will stop working if we ever use yyless() or yyunput() */
 #define	YY_USER_ACTION \
 	{ \
-		srcpos_update(&yylloc, yytext, yyleng); \
+		srcpos_update(&yyllocfoo, yytext, yyleng); \
 	}
 
 /*#define LEXDEBUG	1*/
