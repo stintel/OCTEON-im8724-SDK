@@ -33,6 +33,10 @@ endif
 
 LIBELF := $(shell find /usr/lib* -name libelf.a)
 
+ifeq ($(LIBELF),)
+	LIBELF := -lelf
+endif
+
 CROSS=
 CC=$(CROSS)gcc
 CXX=$(CROSS)g++
