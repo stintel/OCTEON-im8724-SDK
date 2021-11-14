@@ -96,7 +96,7 @@ $(DIR)/oct-remote-bootcmd: $(LIBS) oct-remote-bootcmd.c oct-remote-common.c
 	$(CC) $(CFLAGS) -o $@ $^ $(LIBS) $(LIBS_FLAGS)
 $(DIR)/oct-remote-console: $(LIBS) oct-remote-console.c
 ifndef CROSS
-	$(CC) $(CFLAGS) -o $@ $^ $(LIBS) $(LIBS_FLAGS) -lncurses
+	$(CC) $(CFLAGS) -o $@ $^ $(LIBS) $(LIBS_FLAGS) -lncurses -ltinfo
 else
 	$(CC) $(CFLAGS) -o $@ $^ $(LIBS) $(LIBS_FLAGS)
 endif
